@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^(images|css|js)/(.*)$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^Admin(/.*)?$ Admin/index.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^Client(/.*)?$ Client/index.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ Client/index.php [L,QSA]

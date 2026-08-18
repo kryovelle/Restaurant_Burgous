@@ -1,0 +1,28 @@
+# Burgous — Restaurant Website & Admin Panel
+
+Burgous is a full-stack restaurant reservation system consisting of two 
+connected applications:
+
+- **Client site** — lets guests browse the menu, view restaurant info, and 
+  book a table online with live time-slot availability.
+- **Admin panel (Burgous)** — used by restaurant staff to manage 
+  reservations end-to-end (confirm, propose alternate times, seat, 
+  complete), manage the menu, respond to contact messages, configure 
+  tables/hours/capacity, and view reporting on reservation activity.
+
+Built with PHP, MySQL, and vanilla JavaScript, following an MVC 
+architecture with a single front-controller router. Automated features 
+include email notifications (via PHPMailer) and a scheduled cron job 
+that auto-cancels stale proposed reservations.
+
+## Features
+- Live reservation booking with automatic table-availability checking
+- Admin reservation workflow: pending → confirmed/proposed → seated → completed
+- Menu management with categories, photos, and availability toggles
+- Contact message inbox
+- Configurable opening hours, tables, and party-size duration/buffer rules
+- Reporting dashboard with trend charts and hourly breakdowns
+
+
+## Tech Stack
+PHP · MySQL (PDO) · JavaScript · CSS · PHPMailer
